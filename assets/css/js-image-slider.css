@@ -1,5 +1,3 @@
-/* http://www.menucool.com */
-
 #sliderFrame, #sliderFrame div {
     box-sizing: content-box;
 }
@@ -12,9 +10,47 @@
 }
 
 #slider, #slider .sliderInner {
-    width:1200px;
+    //width:1200px;
     height:600px;/* Must be the same size as the slider images */
     border-radius:0px;
+}
+
+@media screen and (max-width: 1000px) {
+  #slider, #slider .sliderInner {
+    width: 100%;
+  }
+
+  #slider, #slider .sliderInner {
+      width: 100%;
+      height:600px;/* Must be the same size as the slider images */
+      border-radius:0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #slider, #slider .sliderInner {
+    width: 100%;
+    height: 450px !important;
+    background-size: contain;
+  }
+
+  #slider, #slider .sliderInner {
+      width: 100%;
+      height:450px;/* Must be the same size as the slider images */
+      border-radius:0px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  #slider, #slider .sliderInner {
+    width: 100%;
+  }
+
+  #slider, #slider .sliderInner {
+      width: 100%;
+      height:370px;/* Must be the same size as the slider images */
+      border-radius:0px;
+  }
 }
 
 #slider {
@@ -22,6 +58,11 @@
     position:relative;
     margin:0 auto; /*center-aligned*/
     transform: translate3d(0,0,0);
+}
+
+#slider .bgLayer {
+  background-size: contain !important;
+  background-position: center !important;
 }
 
 /* the link style (if an image is wrapped by a link) */
@@ -86,9 +127,7 @@
     display:inline-block;
     *display:inline;zoom:1;/*IE6, IE7 hack*/
     margin:0 1px;/*this determins the distance between each thumbnail*/
-    border:1px solid #333;
     padding:4px;
-    background:black;
     height: 61px;
 }
 

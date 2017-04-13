@@ -4,7 +4,7 @@ var sliderOptions=
 	startSlide: 0,
 	effect: "13,17,13,13,5",
 	effectRandom: true,
-	pauseTime: 2600,
+	pauseTime: 2000,
 	transitionTime: 500,
 	slices: 12,
 	boxes: 9,
@@ -15,7 +15,6 @@ var sliderOptions=
 	thumbnailsWrapperId: "thumbs",
 	m: true
 };
-
 var imageSlider=new mcImgSlider(sliderOptions);
 
 /* Menucool Javascript Image Slider v2016.9.27. Copyright www.menucool.com */
