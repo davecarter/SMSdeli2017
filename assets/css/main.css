@@ -1524,13 +1524,6 @@ button,
     #header {
       height: 60vh;
       padding: 8em 0; } }
-  @media screen and (max-width: 1000px) {
-    #header {
-      height: 40vh;
-      padding: 8em 0; } }
-  @media screen and (max-width: 736px) {
-    #header {
-      height: 30vh; } }
   #header header {
     max-width: 40%;
     margin-left: 10%;
